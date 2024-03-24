@@ -1,14 +1,12 @@
 // eslint-disable  - waring 안뜨게 하려는 코드
-// eslint-disable-next-line no-unused-vars
-const logo = ...;
-
 import React, {useState} from 'react';
-// import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import logo from './logo.svg';
+import './blog.css';
+
+function Blog() {
  
-  let [글제목, 글제목변경] = useState(['추천1', '추천2', '추천3']);
+  let [글제목, 글제목변경] = useState(['추천1', '추천2', '추천3', '추천4']);
   let [따봉, 따봉변경] = useState(0);
   let [하트, 하트변경] = useState(0);
   let posts = '맛집1';
@@ -20,7 +18,7 @@ function App() {
   // }
   // <button onClick={ 제목바꾸기 } >버튼</button>
   return (
-    <div className="App">
+    <div className="blog">
       <div className="black-nav">
         <div> KHM blog </div>
       </div>
@@ -37,6 +35,11 @@ function App() {
       </div>
       <div className="list">
       <h3>{ 글제목[2] }</h3>
+        <p>3월 13일 발행</p>
+        <hr/>
+      </div>
+      <div className="list">
+      <h3>{ 글제목[3] }</h3>
         <p>3월 13일 발행</p>
         <hr/>
       </div>
@@ -57,7 +60,7 @@ function Modal(){
   )
 }
 
-export default App;
+export default Blog;
 
 
 
