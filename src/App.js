@@ -1,6 +1,5 @@
 // eslint-disable  - waring 안뜨게 하려는 코드
 // eslint-disable-next-line no-unused-vars
-const logo = ...;
 
 import React, {useState} from 'react';
 // import logo from './logo.svg';
